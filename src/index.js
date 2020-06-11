@@ -38,9 +38,6 @@ for (let breed of keys){
   li.addEventListener("click",()=>li.style.color = "red")
 }
 }
-})
-.catch(err=>console.log('error',err))
-})
 //filter
 let sel=document.getElementById('breed-dropdown');
 console.log(sel)
@@ -48,3 +45,10 @@ sel.addEventListener("click",()=>{
    let value = sel[sel.selectedIndex].text;
    console.log(value)
 })
+
+
+
+})
+.catch(err=>console.log('error',err))
+})
+
