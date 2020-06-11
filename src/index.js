@@ -42,7 +42,7 @@ for (let breed of keys){
 let sel=document.getElementById('breed-dropdown');
 sel.addEventListener("change",()=>{
    let value = sel[sel.selectedIndex].text;
-   filter_fun(value,keys)
+   filter_fun(value,data,keys)
 
 })
 ///////
@@ -50,7 +50,7 @@ sel.addEventListener("change",()=>{
 .catch(err=>console.log('error',err))
 })
 
-function filter_fun(value,keys){
+function filter_fun(value,data,keys){
 
   for (let breed of keys){
   //  console.log(breed)
