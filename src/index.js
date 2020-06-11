@@ -47,13 +47,3 @@ sel.addEventListener("click",()=>{
    let value = sel[sel.selectedIndex].value;
    console.log(value)
 })
-
-
-
-
-
-
-
-
-
-
