@@ -50,7 +50,7 @@ sel.addEventListener("change",()=>{
 })
 .catch(err=>console.log('error',err))
 })
-}
+
 function filter_fun(value,data,keys){
 let ul=document.getElementById('dog-breeds')
 ul.innerHTML=""
