@@ -43,7 +43,7 @@ let sel=document.getElementById('breed-dropdown');
 console.log(sel)
 sel.addEventListener("change",()=>{
    let value = sel[sel.selectedIndex].text;
-   console.log(value)
+   console.log(ul.textContent)
 })
 
 
