@@ -31,7 +31,8 @@ for (let breed of keys){
   let  li=document.createElement("li")
 
           for (let b of data.message[breed]){
-                li.innerHTM= `<p>${b}</p>`
+              li.insertAdjacentHTML(  "beforeend",
+                                   `<p>${b}</p>`)
                       }
   ul.appendChild(li)
 }
