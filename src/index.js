@@ -37,8 +37,8 @@ for (let breed of keys){
                     /*    ul.lastChild.insertAdjacentHTML(
                                             "beforeend",
                                            ` <p>${b}</p>`
-                                                )
-                      }*/
+                                         )*/
+                      }
 }
   }
 })
