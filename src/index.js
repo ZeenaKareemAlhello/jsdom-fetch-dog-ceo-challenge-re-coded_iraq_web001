@@ -1,7 +1,7 @@
-//console.log('%c HI', 'color: firebrick')
+console.log('%c HI', 'color: firebrick')
 
 document.addEventListener('DOMContentLoaded', () => {
-/*
+
 fetch("https://dog.ceo/api/breeds/image/random/4")
 .then(response=>response.json())
 .then(data =>{
@@ -14,7 +14,7 @@ fetch("https://dog.ceo/api/breeds/image/random/4")
 )  })
 })
 .catch(err=>console.log('error',err))
-/////*/
+
 fetch("https://dog.ceo/api/breeds/list/all")
 .then(response=>response.json())
 .then(data =>{
@@ -50,7 +50,7 @@ sel.addEventListener("change",()=>{
 })
 .catch(err=>console.log('error',err))
 })
-
+}
 function filter_fun(value,data,keys){
 let ul=document.getElementById('dog-breeds')
 ul.innerHTML=""
