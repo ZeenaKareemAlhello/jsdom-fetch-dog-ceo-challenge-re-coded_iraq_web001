@@ -29,10 +29,11 @@ for (let breed of keys){
   console.log('breed',data.message.breed)
   let ul=document.getElementById('dog-breeds')
   let  li=document.createElement("li")
-   ul.appendChild(li)
+  
           for (let b of data.message[breed]){
-                li.innerHTM= ` <p>${b}</p>`
+                li.innerHTM= `<p>${b}</p>`
                       }
+  ul.appendChild(li)
 }
   }
 })
