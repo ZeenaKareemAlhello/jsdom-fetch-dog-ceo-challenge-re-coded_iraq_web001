@@ -54,16 +54,14 @@ sel.addEventListener("change",()=>{
 function filter_fun(value,data,keys){
 let ul=document.getElementById('dog-breeds')
 ul.innerHTML=""
+let  li=document.createElement("li")
   for (let breed of keys){
   //  console.log(breed)
 
     if(data.message[breed].length !==0){
-
-    let ul=document.getElementById('dog-breeds')
-    let  li=document.createElement("li")
-
             for (let b of data.message[breed]){
               if(b[0]==value){
+                
                 li.insertAdjacentHTML(  "beforeend",
                                      `<p>${b}</p>`)
                         }
