@@ -31,7 +31,7 @@ for (let breed of keys){
   let  li=document.createElement("li")
 
           for (let b of data.message[breed]){
-            console.log(b[0])
+            
               li.insertAdjacentHTML(  "beforeend",
                                    `<p>${b}</p>`)
                       }
@@ -52,7 +52,8 @@ sel.addEventListener("change",()=>{
 })
 
 function filter_fun(value,data,keys){
-
+let ul=document.getElementById('dog-breeds')
+ul.innerHTML=""
   for (let breed of keys){
   //  console.log(breed)
 
@@ -62,7 +63,7 @@ function filter_fun(value,data,keys){
     let  li=document.createElement("li")
 
             for (let b of data.message[breed]){
-              if(b[0]===value){
+              if(b[0]==value){
                 li.insertAdjacentHTML(  "beforeend",
                                      `<p>${b}</p>`)
                         }
