@@ -40,9 +40,9 @@ for (let breed of keys){
 }
 //filter
 let sel=document.getElementById('breed-dropdown');
-console.log(sel)
 sel.addEventListener("change",()=>{
    let value = sel[sel.selectedIndex].text;
+   let ul=document.getElementById('dog-breeds')
    console.log(ul.textContent)
 })
 
