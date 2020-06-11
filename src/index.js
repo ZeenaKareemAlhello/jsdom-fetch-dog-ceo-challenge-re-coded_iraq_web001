@@ -31,6 +31,7 @@ for (let breed of keys){
   let  li=document.createElement("li")
 
           for (let b of data.message[breed]){
+            console.log(b[0])
               li.insertAdjacentHTML(  "beforeend",
                                    `<p>${b}</p>`)
                       }
