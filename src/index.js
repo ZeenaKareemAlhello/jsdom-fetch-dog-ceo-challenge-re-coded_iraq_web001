@@ -27,12 +27,15 @@ for (let breed of keys){
 
   if(data.message[breed].length !==0){
   console.log('breed',data.message.breed)
+  let ul=document.getElementById('dog-breeds')
+    ul.insertAdjacentHTML("beforeend",
+   ` <li> </li> `)
           for (let b of data.message[breed]){
 
                  let ul=document.getElementById('dog-breeds')
-                        ul.insertAdjacentHTML(
+                        ul.lastChild.insertAdjacentHTML(
                                             "beforeend",
-                                           ` <li><p>${b}</p> </li> `
+                                           ` <p>${b}</p>`
                                                 )
                       }
 }
