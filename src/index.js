@@ -35,7 +35,7 @@ for (let breed of keys){
                                    `<p>${b}</p>`)
                       }
   ul.appendChild(li)
-  li.addEventListener("click",()=>li.style.color = "red";)
+  li.addEventListener("click",()=>li.style.color = "red")
 }
 }
 })
