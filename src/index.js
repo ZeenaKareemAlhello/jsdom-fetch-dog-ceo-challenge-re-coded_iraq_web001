@@ -41,3 +41,19 @@ for (let breed of keys){
 })
 .catch(err=>console.log('error',err))
 })
+//filter
+let sel=document.getElementById('dog-breeds')
+sel.addEventListener("click",()=>{
+   let value = sel[sel.selectedIndex].value;
+   console.log(value)
+})
+
+
+
+
+
+
+
+
+
+
