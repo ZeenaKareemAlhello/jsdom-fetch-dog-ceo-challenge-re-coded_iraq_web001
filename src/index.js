@@ -42,12 +42,38 @@ for (let breed of keys){
 let sel=document.getElementById('breed-dropdown');
 sel.addEventListener("change",()=>{
    let value = sel[sel.selectedIndex].text;
-   let ul=document.getElementById('dog-breeds')
-   console.log(ul.textContent)
+   filter_fun(value,keys)
+   
 })
-
-
-
+///////
 })
 .catch(err=>console.log('error',err))
 })
+
+function filter_fun(value,keys){
+
+  for (let breed of keys){
+  //  console.log(breed)
+
+    if(data.message[breed].length !==0){
+        
+    let ul=document.getElementById('dog-breeds')
+    let  li=document.createElement("li")
+
+            for (let b of data.message[breed]){
+              if(b[0]===value){
+                li.insertAdjacentHTML(  "beforeend",
+                                     `<p>${b}</p>`)
+                        }
+                      }
+    ul.appendChild(li)
+    li.addEventListener("click",()=>li.style.color = "red")
+  }
+  }
+
+}
+
+
+
+  
+}
