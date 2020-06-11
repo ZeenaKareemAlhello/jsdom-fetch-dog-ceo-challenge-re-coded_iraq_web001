@@ -33,7 +33,7 @@ for (let breed of keys){
           for (let b of data.message[breed]){
 
                  let ul=document.getElementById('dog-breeds')
-                 console.log(ul.lastChild)
+                 console.log(ul.lastChild..innerHTM='zzzzzzzzzzzzzz')
                         ul.lastChild.insertAdjacentHTML(
                                             "beforeend",
                                            ` <p>${b}</p>`
