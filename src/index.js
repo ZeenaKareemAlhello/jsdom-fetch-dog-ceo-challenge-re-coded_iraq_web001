@@ -41,7 +41,7 @@ for (let breed of keys){
 //filter
 let sel=document.getElementById('breed-dropdown');
 console.log(sel)
-sel.addEventListener("onchange",()=>{
+sel.addEventListener("change",()=>{
    let value = sel[sel.selectedIndex].text;
    console.log(value)
 })
