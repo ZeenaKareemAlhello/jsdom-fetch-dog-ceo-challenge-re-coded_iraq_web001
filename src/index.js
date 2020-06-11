@@ -43,7 +43,7 @@ let sel=document.getElementById('breed-dropdown');
 sel.addEventListener("change",()=>{
    let value = sel[sel.selectedIndex].text;
    filter_fun(value,keys)
-   
+
 })
 ///////
 })
@@ -56,7 +56,7 @@ function filter_fun(value,keys){
   //  console.log(breed)
 
     if(data.message[breed].length !==0){
-        
+
     let ul=document.getElementById('dog-breeds')
     let  li=document.createElement("li")
 
@@ -75,5 +75,5 @@ function filter_fun(value,keys){
 
 
 
-  
+
 }
