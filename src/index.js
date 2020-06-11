@@ -20,13 +20,13 @@ fetch("https://dog.ceo/api/breeds/list/all")
 .then(data =>{
   console.log('breed',data)
 let keys=Object.keys(data.message)
-console.log('keys',keys[5],'\n')
+//console.log('keys',keys[5],'\n')
 //console.log(data.message[keys[5]])
 for (let breed of keys){
-  console.log(breed)
+//  console.log(breed)
 
   if(data.message[breed].length !==0){
-  console.log('breed',data.message.breed)
+
   let ul=document.getElementById('dog-breeds')
   let  li=document.createElement("li")
 
@@ -37,7 +37,7 @@ for (let breed of keys){
   ul.appendChild(li)
   li.addEventListener("click",()=>li.style.color = "red";)
 }
-  }
+}
 })
 .catch(err=>console.log('error',err))
 })
